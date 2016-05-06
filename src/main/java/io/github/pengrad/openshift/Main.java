@@ -16,6 +16,11 @@ public class Main {
         ipAddress(args[0]);
         port(Integer.parseInt(args[1]));
 
+
+        get("/", (request, response) -> {
+            return "";
+        });
+
         get("/favicon.ico", (request, response) -> {
                     response.status(200);
                     return " ";
