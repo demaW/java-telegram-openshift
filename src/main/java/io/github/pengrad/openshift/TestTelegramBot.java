@@ -11,7 +11,7 @@ import com.pengrad.telegrambot.model.Update;
  */
 public class TestTelegramBot extends BotHandler {
 
-    TelegramBot bot = TelegramBotAdapter.buildDebug("187503040:AAH_tQmUN9vluudqk7w1Hg04xKfkRcw9_DU");
+    TelegramBot bot = TelegramBotAdapter.buildDebug("187503040:AAEJzEJHJ0t517weDXY7bttDatnrwFZpPM8");
 
     @Override
     protected boolean onStart(Message message) {

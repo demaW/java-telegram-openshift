@@ -1,5 +1,6 @@
 package io.github.pengrad.openshift;
 
+import com.pengrad.telegrambot.model.Message;
 import spark.Request;
 import spark.Response;
 import spark.Route;
@@ -15,8 +16,7 @@ public class Main {
         ipAddress(args[0]);
         port(Integer.parseInt(args[1]));
 
-
-        get("/favicon.ico", (Route) (request, response) -> {
+        get("/favicon.ico", (request, response) -> {
                     response.status(200);
                     return " ";
                 }
