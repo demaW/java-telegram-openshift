@@ -18,6 +18,7 @@ public class Main {
 
 
         get("/", (request, response) -> {
+            response.status(200);
             return "";
         });
 
