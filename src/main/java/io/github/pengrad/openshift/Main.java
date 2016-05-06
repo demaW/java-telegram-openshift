@@ -1,6 +1,6 @@
 package io.github.pengrad.openshift;
 
-import com.pengrad.telegrambot.model.Message;
+import org.apache.log4j.Logger;
 import spark.Request;
 import spark.Response;
 import spark.Route;
@@ -10,15 +10,19 @@ import java.io.File;
 import static spark.Spark.*;
 
 public class Main {
+    private static Logger log = Logger.getLogger(Main.class.getName());
+
     private static final File FAVICON_PATH = new File("src/main/resources/favicon.ico");
 
     public static void main(String[] args) {
         ipAddress(args[0]);
         port(Integer.parseInt(args[1]));
 
+        log.info("ip is: " + args[0]);
 
         get("/", (request, response) -> {
             response.status(200);
+            log.info("in /");
             return "";
         });
 

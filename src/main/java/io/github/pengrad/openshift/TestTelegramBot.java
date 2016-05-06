@@ -11,7 +11,8 @@ import com.pengrad.telegrambot.model.Update;
  */
 public class TestTelegramBot extends BotHandler {
 
-    TelegramBot bot = TelegramBotAdapter.buildDebug("187503040:AAEJzEJHJ0t517weDXY7bttDatnrwFZpPM8");
+    public static final String BOT_TOKEN = "187503040:AAEJzEJHJ0t517weDXY7bttDatnrwFZpPM8";
+    TelegramBot bot = TelegramBotAdapter.buildDebug(BOT_TOKEN);
 
     @Override
     protected boolean onStart(Message message) {
