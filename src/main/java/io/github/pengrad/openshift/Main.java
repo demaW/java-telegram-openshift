@@ -41,7 +41,7 @@ public class Main {
         // simple string by GET
         get("/hello", (req, res) -> {
             System.out.println(bot.bot.getMe().isOk());
-            return "Hello World";
+            return "Hello World2";
         });
 
         // GET/POST handler
